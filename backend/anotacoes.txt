@@ -1,0 +1,66 @@
+Rota / Recurso
+
+Rota é o caminho completo: www.minhaplicacao.com/users
+Recurso é uma "parte" da aplicação: /users
+
+--------------------
+
+Métodos HTTP
+
+GET: Buscar/listar uma informação no backend
+POST:Criar uma informação no backend
+PUT: Alterar uma informação no backend
+DELETE: Deletar uma informação no backend
+
+--------------------
+
+Tipos de Parâmetros
+
+ * Query Params: Parâmetros nomeados enviados na rota após "?", serve para filtros e paginação por exemplo.
+ * Route Params: Parâmetros utilizados para identificar recursos.
+ * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos.
+
+--------------------
+
+Banco de Dados
+
+ * SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+ * NoSQL: MongoDB, CouchDB, etc.
+
+--------------------
+
+Driver para Banco de Dados
+
+ * Driver: SELECT * FROM users
+ * Query Builder: table('users').select('*').where()
+
+OBS. Para o nosso caso utilizaremos o KNEX que é um Query Builder (Permite escrever consultas em banco por meio do JS).
+
+1º Instalação do KNEX: npm install knex;
+2º Instalação do plugin do banco de dados: npm install sqlite3;
+3º Iniciar o banco: npx knex init;
+4º Organização das pastas: criar pastas para o database e migrations;
+5º Criar migrations: criar as migrations usando npx knex migrate:make create_ongs (Nome da migration);
+6º Criar tabelas: inserir código para criação da tabela no arquivo de migration;
+7º Executar migration: executar o comando npx knex migrate:latest;
+
+--------------------
+
+Entidades (Aquilo que eu deverei salvar no DB)
+
+ * ONG;
+ * Caso (Incident).
+
+
+Funcionalidades (Aquilo que poderá ser feito pela entidade)
+
+* Login de ONG;
+* Logout de ONG;
+* Cadastro de ONG;
+* Cadastrar novos casos;
+* Deletar casos;
+* Listar casos específicos de uma ONG;
+* Listar todos os casos;
+* Entrar em contato com a ONG.
+
+--------------------
