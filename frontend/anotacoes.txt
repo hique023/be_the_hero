@@ -74,5 +74,15 @@ Inserir os seguintes códigos no arquivo .json de configuração:
 --------------------
 
 Instalação de Pacotes de Ícones
-
  * npm install react-icons - Comando para instalar ícones dentro do projeto.
+
+Instalação do Pacote de Rotas
+ * npm install react-router-dom
+
+--------------------
+
+Anotações sobre Rotas
+
+ * BrowserRouter: englobará todas as rotas;
+ * Route: cada uma das rotas;
+ * Switch: permite que apenas uma rota seja chamada (executada) por vez;
