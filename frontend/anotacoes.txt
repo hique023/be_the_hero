@@ -1,0 +1,78 @@
+Arquivos que não serão necessários para nosso app.
+ 
+Principal
+ * Readme.md;
+
+src
+ * App.css;
+ * App.test.js;
+ * index.css;
+ * logo.svg;
+ * serviceWorker.js;
+ * reportWebVitals.js
+ * setupTests.js.
+
+public
+ * robots.txt;
+ * manifest.json;
+ * logo192.svg
+ * logo512.svg
+
+ --------------------
+
+Removendo links após limpeza do projeto.
+
+index.js
+ * Remover a importação do arquivo index.css;
+ * Remover a importação do arquivo serviceWorker.js;
+ * Remover a importação do reportWebVitals;
+ * Remover o comentário ao final do arquivo.
+
+App.js
+* Remover a importação do arquivo logo.svg;
+* Remover a importação do arquivo App.css;
+* Remover todo o conteúdo presente no arquivo (div) e manter apenas o return.
+
+index.html
+* Remover o conteúdo após <meta name="theme-color" content="#000000" /> até o <title>React App</title>;
+* Remover comentário ao final do arquivo (desnecessário).
+
+--------------------
+
+JSX
+ * Existe quando escrevo um código HTML dentro do JavaScript. É a abreviação de JavaScript XML.
+
+--------------------
+
+Componente
+ * Um componente no React é uma função que retorna HTML e ela pode ter funcionalidades JS e CSS.
+
+--------------------
+
+Propriedades: são os atributos do HTML, por exemplo: h1 e o id="title".
+Estados: pode ser entendido como uma informação que será mantida pelo componente.
+Imutabilidade: não posso alterar um valor do estado de forma direta. Precisamos sobrepor o valor do estado.
+
+--------------------
+
+OBS.
+ * Criar um arquivo .css global na pasta raíz afim de aplicar estilo a todas as páginas.
+ * Para importar assets como imagens por exemplo é necessário importar como um componente criando um nome para ela.
+
+--------------------
+
+Configuração do Emmet para auxiliar no desenvolvimento
+
+Inserir os seguintes códigos no arquivo .json de configuração:
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+
+--------------------
+
+Instalação de Pacotes de Ícones
+
+ * npm install react-icons - Comando para instalar ícones dentro do projeto.
