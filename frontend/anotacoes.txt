@@ -86,3 +86,14 @@ Anotações sobre Rotas
  * BrowserRouter: englobará todas as rotas;
  * Route: cada uma das rotas;
  * Switch: permite que apenas uma rota seja chamada (executada) por vez;
+
+--------------------
+
+Cliente HTTP
+ * Responsável por realizar as chamadas na API do Backend e obter as respostas.
+
+Instalando o Axios
+ * npm install axios
+
+ * Criar uma pasta chamada services.
+ * Criar um arquivo api.js que receberá toda a comunicação com serviços externos.
